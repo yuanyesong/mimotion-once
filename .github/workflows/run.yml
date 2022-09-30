@@ -6,7 +6,7 @@ on:
   # pull_request:
   #  branches: [ main ]
   schedule:
-    - cron: '43 9 * * *'
+    - cron: '18 13 * * *'
   watch:
     types: started
   workflow_dispatch:
@@ -14,7 +14,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
+    # if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
       - uses: actions/checkout@v2
