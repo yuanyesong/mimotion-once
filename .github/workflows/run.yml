@@ -6,7 +6,7 @@ on:
   # pull_request:
   #  branches: [ main ]
   schedule:
-    - cron: '18 13 * * *'
+    - cron: '43 8 * * *'
   watch:
     types: started
   workflow_dispatch:
@@ -17,7 +17,7 @@ jobs:
     # if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: 初始化Python
         uses: actions/setup-python@v2
         with:
